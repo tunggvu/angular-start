@@ -13,8 +13,6 @@ import { PeopleService } from '../people.service';
       </li>
     </ul>
 
-    <app-person-details [person]="selectedPerson"></app-person-details>
-
   `,
   styleUrls: ['./people-list.component.scss']
 })
