@@ -13,8 +13,6 @@ import { PeopleService } from '../people.service';
       </li>
     </ul>
 
-    <app-person-details [person]="selectedPerson"></app-person-details>
-
   `,
   styleUrls: ['./people-list.component.scss']
 })
@@ -26,7 +24,7 @@ export class PeopleListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.people = this.peopleService.getAll();
+    this.peopleService.getAll().subscribe(p => this.people = p)
   }
 
   selectPerson(person){

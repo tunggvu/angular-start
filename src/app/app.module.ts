@@ -10,6 +10,7 @@ import { PersonDetailsComponent } from './person-details/person-details.componen
 
 import { appRouterModule } from './app.routes';
 
+
 @NgModule({
   declarations: [
     AppComponent,
